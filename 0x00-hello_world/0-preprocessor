@@ -1,15 +1,2 @@
 #!/bin/bash
-
-if [ -z "$CFILE" ]; then
-  echo "CFILE environment variable is not set. Please set it to the C file name."
-  exit 1
-fi
-
 gcc -E "$CFILE" -o c
-
-if [ $? -eq 0 ]; then
-  echo "Preprocessing completed successfully. Output saved to 'c'."
-else
-  echo "Error occurred during preprocessing."
-  exit 1
-fi
