@@ -10,23 +10,23 @@
  */
 int main(void)
 {
-    char lowercase_letter;
-    char uppercase_letter;
+	char lowercase_letter;
+	char uppercase_letter;
 
-    /* Print lowercase alphabet */
-    for (lowercase_letter = 'a'; lowercase_letter <= 'z'; lowercase_letter++)
-    {
-        putchar(lowercase_letter);
-    }
+	/* Print lowercase alphabet */
+	for (lowercase_letter = 'a'; lowercase_letter <= 'z'; lowercase_letter++)
+	{
+		putchar(lowercase_letter);
+	}
 
-    /* Print uppercase alphabet */
-    for (uppercase_letter = 'A'; uppercase_letter <= 'Z'; uppercase_letter++)
-    {
-        putchar(uppercase_letter);
-    }
+	/* Print uppercase alphabet */
+	for (uppercase_letter = 'A'; uppercase_letter <= 'Z'; uppercase_letter++)
+	{
+		putchar(uppercase_letter);
+	}
 
-    putchar('\n');
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
 
