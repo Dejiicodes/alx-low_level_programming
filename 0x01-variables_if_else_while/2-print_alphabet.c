@@ -9,16 +9,16 @@
  */
 int main(void)
 {
-    char letter = 'a'; /* Start with 'a' */
+	char letter = 'a'; /* Start with 'a' */
 
-    while (letter <= 'z') /* Loop from 'a' to 'z' */
-    {
-        putchar(letter); /* Print the current letter */
-        letter++; /* Move to the next letter */
-    }
+	while (letter <= 'z') /* Loop from 'a' to 'z' */
+	{
+		putchar(letter); /* Print the current letter */
+		letter++; /* Move to the next letter */
+	}
 
-    putchar('\n'); /* Print a newline character after printing the alphabet */
+	putchar('\n'); /* Print a newline character after printing the alphabet */
 
-    return (0);
+	return (0);
 }
 
