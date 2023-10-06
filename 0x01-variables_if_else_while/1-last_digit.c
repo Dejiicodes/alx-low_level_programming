@@ -4,24 +4,21 @@
 
 /**
  * main - Entry point
- *
- * Description: This program generates a random number and
- * prints the last digit of the number, along with additional information.
- *
+ * Description: Print the last digit of a random number.
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
     int n;
-    int lastDigit;
+    int lastDigit; /* Declare lastDigit at the beginning */
 
     srand(time(0));
     n = rand() - RAND_MAX / 2;
 
-    /* Get the last digit of 'n' by taking the absolute value and modulo 10 */
-    lastDigit = abs(n) % 10;
+    lastDigit = n % 10; /* Calculate the last digit */
 
-    printf("Last digit of %d is %d and is ", n, (n < 0) ? -lastDigit : lastDigit);
+    printf("Last digit of %d is %d and is ", n, lastDigit);
 
     if (lastDigit > 5)
     {
