@@ -2,10 +2,22 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * is_digit - Check if a character is a digit.
+ * @c: The character to check.
+ *
+ * Return: 1 if the character is a digit, 0 otherwise.
+ */
 int is_digit(char c) {
     return c >= '0' && c <= '9';
 }
 
+/**
+ * str_to_int - Convert a string to an integer.
+ * @str: The string to convert.
+ *
+ * Return: The integer value of the string.
+ */
 int str_to_int(char *str) {
     int result = 0;
     int i;
@@ -15,6 +27,9 @@ int str_to_int(char *str) {
     return result;
 }
 
+/**
+ * print_error - Print an error message and exit with status 98.
+ */
 void print_error() {
     fprintf(stderr, "Error\n");
     exit(98);
