@@ -1,14 +1,17 @@
-#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
-/**
- * main - check the code
- *
- * Return: Always EXIT_SUCCESS.
- */
+size_t _strlen(const char *s)
+{
+    size_t len = 0;
+    while (s[len] != '\0')
+    {
+        len++;
+    }
+    return len;
+}
+
 int main(void)
 {
-    printf("%d\n", _strlen("My Dyn Lib"));
-    return (EXIT_SUCCESS);
+    printf("%d\n", (int)_strlen("My Dyn Lib"));
+    return 0;
 }
