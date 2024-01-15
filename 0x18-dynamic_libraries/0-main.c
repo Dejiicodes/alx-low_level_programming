@@ -1,17 +1,15 @@
+#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-size_t _strlen(const char *s)
-{
-    size_t len = 0;
-    while (s[len] != '\0')
-    {
-        len++;
-    }
-    return len;
-}
-
+/**
+ * main - check the code
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
 int main(void)
 {
-    printf("%d\n", (int)_strlen("My Dyn Lib"));
-    return 0;
+    printf("%d\n", _strlen("My Dyn Lib"));
+    return (EXIT_SUCCESS);
 }
